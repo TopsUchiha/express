@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import { headers } from 'next/headers'
 import { SiteHeader } from '@/components/layout/site-header'
 import { SiteFooter } from '@/components/layout/site-footer'
-import { ChatWidget } from '@/components/chat/chat-widget'
+import { ChatWidgetLazy } from '@/components/chat/chat-widget-lazy'
 import { siteConfig } from '@/lib/site-config'
 import './globals.css'
 
@@ -63,7 +63,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
           {children}
         </main>
         <SiteFooter />
-        <ChatWidget />
+        <ChatWidgetLazy />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

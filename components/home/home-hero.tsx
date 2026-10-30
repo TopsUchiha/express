@@ -10,7 +10,6 @@ export function HomeHero() {
         alt="Container port terminal with stacked shipping containers and gantry cranes"
         fill
         priority
-        quality={90}
         sizes="100vw"
         className="-z-20 object-cover"
       />
